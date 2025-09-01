@@ -1,0 +1,21 @@
+language = "C"
+include_guard = "MECCZ_H"
+pragma_once = true
+include_version = true
+namespace = "meccz"
+
+[export]
+include = ["QiblaResult", "CompassEntryC", "CompassTableC"]
+
+[parse]
+parse_deps = false
+include = ["meccz"]
+
+[struct]
+rename_fields = "CamelCase"
+
+[enum]
+rename_variants = "CamelCase"
+
+[fn]
+rename_args = "CamelCase"
